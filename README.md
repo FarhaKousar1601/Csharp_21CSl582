@@ -31,7 +31,6 @@ The CIE marks for this practical course are split into record/journal (60%) and 
 
 SEE marks are conducted jointly by examiners and include evaluation based on write-ups, conduction procedures, results, and viva-voce. Rubrics for evaluation are determined based on course requirements.
 
-
 ---
 
 Feel free to clone this repository and explore the experiments. Happy coding!

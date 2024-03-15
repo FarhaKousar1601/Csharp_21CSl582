@@ -1,0 +1,52 @@
+using System;
+class Calculator
+static void Main()
+{
+    Console.WriteLine("Simple arithmetic calculator");
+    Console.Write(Enter the operator(+, -, *, /,%): ");
+    char operation = Console.readKey().KeyChar;
+    Console.WriteLine();
+    Console.Write("Enter the first operand: ");
+    double operand1 = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Enter the second operand: ");
+    double operand2 = Convert.ToDouble(Console.ReadLine());
+
+    double result = 0;
+    switch (operation)
+    {
+        case '+':
+            result = operand1 + operand2;
+            break;
+        case '-':
+            result = operand1 - operand2;
+            break;
+        case '*':
+            result = operand1 * operand2;
+            break;
+        case '/':
+            if (operand2 != 0)
+            {
+                 result = operand1 / operand2;
+            }
+            else
+            {
+                Console.WriteLine("Error: Division by zero ");
+            }
+            break;
+        case '%':
+        if (operand2 != 0)
+            {
+                 result = operand1 % operand2;
+            }
+            else
+            {
+                Console.WriteLine("Error: Division by zero ");
+            }
+            break;
+        default:
+            Console.WriteLine("Invalid operator");
+          result;
+          Console.WriteLine("Result: {operand1} {operation} {operand2} = {result"); 
+    }
+}
